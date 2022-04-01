@@ -12,7 +12,7 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version:  4.2.1
   - [x] GIF Walkthrough: 
-  <img src="vuln1.gif"  />
+<div id='logo' style='background:url(vuln1.gif)'></div>
   - [x] Steps to recreate: 
         Place the following HTML element in a comment box.
         "<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>" where there are 64 kb of content in order for the backend to truncate the comment and store the XSS. If the commenter is already approved, the commenter will be able to make the comment. Then the administrator, when they look at the comments again, will be vulnerable to the stored XSS.
