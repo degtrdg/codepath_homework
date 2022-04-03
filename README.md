@@ -22,7 +22,7 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.2
   - [x] GIF Walkthrough: 
-  <img src="Screen Recording 2022-04-03 at 9.09.49 AM.gif" width="500" height="500" />
+  <img src="vuln2.gif" width="500" height="500" />
   - [x] Steps to recreate: 
   Place the following anchor tag in the WordPress HTML editor as a user 
   who can write posts: 
