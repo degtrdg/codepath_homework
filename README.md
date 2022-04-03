@@ -16,14 +16,18 @@ Time spent: **X** hours spent in total
   - [x] Steps to recreate: 
         Place the following HTML element in a comment box.
         "<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>" where there are 64 kb of content in order for the backend to truncate the comment and store the XSS. If the commenter is already approved, the commenter will be able to make the comment. Then the administrator, when they look at the comments again, will be vulnerable to the stored XSS.
-### 2. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+### 2. Authenticated Stored Cross-Site Scripting 
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.2
+  - [x] GIF Walkthrough: 
+  <img src="Screen Recording 2022-04-03 at 9.09.49 AM.gif" width="500" height="500" />
+  - [x] Steps to recreate: 
+  Place the following anchor tag in the WordPress HTML editor as a user 
+  who can write posts: 
+  "<a href="</a><a title=" onmouseover=alert('test')  ">link</a>"
+  Mouseover the link and the javascript is run on the post.
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 ### 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
