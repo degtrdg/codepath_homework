@@ -27,40 +27,19 @@ Time spent: **X** hours spent in total
   - [x] Steps to recreate: 
   Place the following anchor tag in the WordPress HTML editor as a user 
   who can write posts: 
-  "<a href="</a><a title=" onmouseover=alert('test')  ">link</a>"
+  \<a href="</a><a title=' onmouseover=alert("test")  '>link</a>
   Mouseover the link and the javascript is run on the post.
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-### 3. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps torecreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-### 4. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-### 5. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
 
-## Assets
-
-List any additional assets, such as scripts or files
+### 3. XXS in Youtube Url using short codes
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.7.3
+  - [x] GIF Walkthrough: 
+  <img src="vuln3.gif" width="500" height="500" />
+  - [x] Steps to recreate: 
+  Type the following in an HTML input in WordPress:
+[embed src='http://youtube.com/embed/12345\x3csvg onload=alert(1)\x3e'][/embed]
 
 ## Resources
 
@@ -72,6 +51,7 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while doing the work
+I had a hard time reading some of the workups of other people but that got easier.
 
 ## License
 
