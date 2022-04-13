@@ -22,44 +22,17 @@ XSS in the contact page. Go to admin and have the script deployed.
 
 <img src="green-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: SQLi proof of concept
 
 Description:
+On one of the versions of the site you're allowed to inject SQL into the id parameter fo salespeople.
 
-<img src="blue-vuln2.gif">
+<img src="blue-vuln1.gif">
 
-## Green
-
-Vulnerability #1: __________________
-
-Description:
-
-<img src="green-vuln1.gif">
-
-Vulnerability #2: __________________
+Vulnerability #3: IDOR
 
 Description:
-
-<img src="green-vuln2.gif">
-
-
-## Red
-
-Vulnerability #: __________________
-
-Description:
+You are able to change the id paramter and access salespeople that shouldn't be avaiable.
 
 <img src="red-vuln1.gif">
 
-Vulnerability #2: __________________
-
-Description:
-
-<img src="red-vuln2.gif">
-
-
-## Notes
-
-Describe any challenges encountered while doing the work
-
-1
